@@ -1,0 +1,126 @@
+body{
+    background-color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+
+.nav{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: static;
+    background-color: grey;
+
+}
+
+
+
+li{
+    float: left;
+
+}
+
+ .nav li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;
+}
+
+li a:hover{
+    background-color:blue;
+    color: black;
+    text-decoration: underline;
+
+}
+
+li a:active{
+    background-color: grey;
+}
+
+
+
+
+span{
+    color: blue;
+    font-size: large;
+    font-weight: bolder;
+    font-size: larger;
+    
+}
+
+.i{
+    color: whitesmoke;
+    font-size: larger;
+    text-align: center;
+
+    
+}
+.me{
+    color: whitesmoke;
+    font-size: large;
+    text-align: center;
+
+}
+.Deli{
+
+    color: whitesmoke;
+    float:none; 
+    font-style: normal;
+    padding: 10px 20px 10px 20px;
+    border: 100px;
+    margin: 15px;
+}
+
+a.one:link, a.one:visited {
+    display: inline-block;
+    background-color: black;
+    color: white;
+    float: right;
+    text-align: center;
+    border: 2px solid grey;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+ a.one:hover, a.one:active{
+    background-color:grey;
+    color: black;
+ }
+
+ .list{
+    list-style-type: none;
+    background-color:grey;
+    border-radius: 20px;
+    padding: 10px 20px;
+    overflow: hidden;
+
+ }
+
+ .list ul{
+    color: whitesmoke;
+    text-transform: lowercase;
+    text-align: center;
+ }
+
+
+
+
+
+.end{
+    background-color:grey ;
+    color: whitesmoke;
+    padding: 10px 20px 10px 20px;
+    border: 25px;
+    margin: 15px;
+}
+
+
+/*First Website on own with God, Jesus and Holyspirit */

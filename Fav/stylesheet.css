@@ -1,0 +1,393 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #000010;
+}
+
+h1{
+    color: white;
+    text-align: center;
+    font-weight: bolder;
+    font-size:50px;
+    font-style: normal;
+    font-stretch: expanded;
+font-family: "Oswald", sans-serif;;
+}
+
+h2{
+    color: white;
+    text-align: center;
+    font-weight: bolder;
+    font-style: normal;
+    font-stretch: expanded;
+    font-family: "Oswald", sans-serif;
+}
+
+h3{
+    color:black;
+    font-size: larger;
+    font-weight: bolder;
+    text-align: center;
+    text-shadow: 2px 2px 4px gray;
+}
+
+h4{
+    font-size: 30px;
+    color: white;
+    font-weight: bolder;
+    font-style: normal;
+    text-transform:uppercase;
+    font-stretch: expanded;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;}
+
+p{
+    color: white;
+    font-family: "Oswald", sans-serif;
+    font-style: normal;
+    font-weight: lighter;
+
+}
+
+
+
+span{
+    color:gray;
+}
+
+address{
+    color: white;
+    font-stretch: ultra-expanded;
+    font-size: 40px;
+}
+
+/*Navbar section*/
+.navbar{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: static;
+    background-color:gray;
+
+}
+
+
+
+li{
+    float: right;
+
+}
+
+ .navbar li a{
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: larger;
+}
+
+li a:hover{
+    background-color:white;
+    color: black;
+    text-decoration:none;
+
+
+}
+
+li a:active{
+    background-color: black;
+    color:white
+}
+
+/*Header section starts from here*/
+.header-logo{
+    float: left;
+    background-color: gray;
+    
+}
+
+.Home{
+    display: flex;
+   flex-wrap: nowrap;
+   fill-rule: evenodd;
+   text-align: center;
+   align-items: flex-start;
+}
+@media(max-width: 800px){
+    .Home{
+        flex:50%;
+        max-width: 50%;
+    }
+
+
+}
+
+
+@media(max-width: 600px){
+    .Home{
+        flex:100%;
+        max-width: 100%;
+    }
+}
+
+
+/*Service section*/
+.service{
+    background-image: url(Image/banquet-2639395_1280.jpg );
+   background-repeat: no-repeat;
+   background-position: left;
+   background-size: cover;
+   scroll-behavior: auto;
+}
+
+
+/*.home-image{
+    float: right;
+
+}
+
+#Home::after{
+content: "";
+clear: both;
+display: table;
+}*/
+
+
+.g-card{
+    background-color: ghostwhite;
+    margin: 16px;
+   margin-bottom: 25px;
+}
+
+.g-card:hover{
+    box-shadow: 0 10px 15px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+}
+
+
+
+.service-content>img{
+    
+    width: 100px;
+    margin: 50px;
+
+}
+
+
+.service-content{
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content:space-around;
+
+
+}
+
+
+.service-content img{
+    margin-top: 8px;
+    vertical-align: middle;
+}
+
+
+@media(max-width: 800px){
+    .service-content{
+        flex:50%;
+        max-width: 50%;
+    }
+
+
+}
+
+
+@media(max-width: 600px){
+    .service-content{
+        flex:100%;
+        max-width: 100%;
+    }
+}
+
+/*.service-content{
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+.service-content img{
+    margin-top: 8px;
+    vertical-align: middle;
+}
+
+
+@media(max-width: 800px){
+    .service-content{
+        flex:50%;
+        max-width: 50%;
+    }
+
+
+}
+
+
+@media(max-width: 600px){
+    .service-content{
+        flex:100%;
+        max-width: 100%;
+    }
+}*/
+
+
+.button{
+    background-color: white;
+    border: 2px solid blue;
+    color: blue;
+    padding: 15px;
+    text-align: center;
+    font-size: 16px;
+    margin: 2px 2px;
+    opacity: 0.6;
+    transition: 0.3;
+    border-radius: 50px;
+    display: inline-block;
+    text-decoration: none;
+    cursor:progress ;
+}
+
+.button:hover{
+    color: white;
+    background-color: blue;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+/*Chef section*/
+.p-card{
+    background-color: ghostwhite;
+    margin: 16px;
+      
+}
+
+.Chefs-content{
+    display: flex;
+  
+    flex-wrap: nowrap;
+    justify-content:space-around;
+    align-content: baseline;   
+    
+}
+
+.p-card{
+    position: relative;
+
+}
+
+.image{
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.middle{
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   height: 100%;
+   width: 100%;
+   opacity: 0;
+   transition: .5s ease;
+   background-color: gray;
+}
+
+
+
+.p-card:hover .middle{
+    opacity: 0.9;
+}
+
+.text{
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+
+/*About section*/
+
+.about-content{
+    text-align: center;
+    font-size: larger;
+    font-weight: normal;
+}
+
+/*.contact-info{
+    float: right;
+}*/
+ 
+/*Contact section*/
+.Con{
+    text-align: center;
+}
+
+.spam{
+    font-size: 30px;
+}
+
+/*Footer section*/
+
+.foot{
+    padding: 10px 15px;
+    background-color: #0000ff;
+    border: 2px solid #0000ff;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 0px;
+    display: block;
+    gap:2px;
+    color: white;
+}
+
+.class{
+    text-align: center;
+}
+
+.quick-links{
+    text-align: center;
+}
+
+
+a{
+    color: white;
+}
+
+.list:link, .list:visited{
+    background-color: white;
+    color:black;
+    padding: 14px 14px;
+    text-align: center;
+    text-decoration: none;
+    margin:16px;
+    display:block;
+    }
+    
+    .list:hover{
+        color:white;
+        background-color:#000010;
+        text-transform: uppercase;
+        font-size:20px;
+    }
+
+
+    /*Another Success Young Dummy Developer*/
+    /*More to Come*/
